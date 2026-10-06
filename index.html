@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Upadhyay | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Three.js for 3D Backgrounds -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="iiitn-logo.png">
+</head>
+<body>
+
+    <!-- 3D Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- 3D Background Selector UI -->
+    <div class="bg-control-panel">
+        <div class="control-label">⚡ 3D Engine Mode</div>
+        <div class="mode-buttons">
+            <button class="mode-btn active" data-mode="nodes">Node Mesh</button>
+            <button class="mode-btn" data-mode="wave">Cyber Wave</button>
+            <button class="mode-btn" data-mode="tunnel">Vortex Tunnel</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-symbol">&lt;</span>UU<span class="logo-symbol">&gt;</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, my name is</p>
+            <h1 class="hero-name">Utkarsh Upadhyay</h1>
+            <p class="hero-title">
+                and I'm a <span>2nd Year CSE Student | Competitive Programmer, DSA & ML Enthusiast</span>
+            </p>
+        </div>
+        <div class="about-card">
+            <h2>_About Me_</h2>
+            <p>
+                I am a passionate tech enthusiast currently in my second year of undergraduation. I love solving algorithmic problems, diving deep into Data Structures & Algorithms, and exploring Machine Learning concepts. Always eager to build scalable web applications and learn cutting-edge technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <h2 class="section-title">Competitive_Programming_Stats</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>LEETCODE</h3>
+                <h1 id="leetcode-count" class="stat-score">--</h1>
+                <p>Total Questions Solved</p>
+                <a href="https://leetcode.com/u/utkarshupadhyaydhoom18" target="_blank" class="stat-link">View Profile →</a>
+            </div>
+
+            <div class="stat-card">
+                <h3>CODECHEF</h3>
+                <h1 id="codechef-rating" class="stat-score">--</h1>
+                <p>Current Rating</p>
+                <a href="https://www.codechef.com/users/jos02" target="_blank" class="stat-link">View Profile →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-empty-state">
+            <div class="empty-box">
+                <p>🚀 Exciting projects are currently under construction. Check back soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>CONCEPTS</h2>
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Competitive Programming</li>
+                    <li>Machine Learning Fundamentals</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h2>TOOLS</h2>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>Jupyter Notebook</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="edu-card">
+            <div class="edu-logo-wrapper">
+                <img src="iiitn-logo.png" alt="IIIT Nagpur Logo" class="edu-logo">
+            </div>
+            <div class="edu-details">
+                <h2>Indian Institute Of Information Technology, Nagpur</h2>
+                <p class="edu-sub">B.Tech in Computer Science Engineering <br> 2025 - 2029 <br> <span class="highlight-score">CGPA - 7.94</span></p>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-logo-wrapper">
+                <img src="rlsconv.jpeg" alt="RLS Convent School Logo" class="edu-logo">
+            </div>
+            <div class="edu-details">
+                <h2>RLS Convent School</h2>
+                <p class="edu-sub">Intermediate (Class XII) <br> 2023 - 2024 <br> <span class="highlight-score">Percentage - 89.2%</span></p>
+            </div>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-logo-wrapper">
+                <img src="rlsconv.jpeg" alt="RLS Convent School Logo" class="edu-logo">
+            </div>
+            <div class="edu-details">
+                <h2>RLS Convent School</h2>
+                <p class="edu-sub">High School (Class X) <br> 2021 - 2022 <br> <span class="highlight-score">Percentage - 97.2%</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="contact-subtitle">I’m always open for collaborations, discussions, or just a chat 👋</p>
+        <div class="contact-links">
+            <a href="mailto:utkarshjeeadv2025@gmail.com" class="contact-btn">📧 Email</a>
+            <a href="https://github.com/dhoomnation" target="_blank" rel="noopener noreferrer" class="contact-btn">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/salt161" target="_blank" rel="noopener noreferrer" class="contact-btn">🔗 LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed & Built by Utkarsh Upadhyay © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
